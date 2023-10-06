@@ -13,11 +13,11 @@ if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	// Muốn thêm key mới thì copy hết dòng dưới thay mã key với ngày hết hạn
 	
 	
-	if ( $keyvipcheck == "bukeyfrinhanhne"){
+	if ( $keyvipcheck == "hxjejfbidncdbjxnejfj"){
 	if ("08-10-2023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
- if ( $keyvipcheck == "test123"){
+ if ( $keyvipcheck == "jjdjejjeiecjdjchh"){
 	if ("08-11-2023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
