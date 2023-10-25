@@ -27,7 +27,7 @@ if ( $keyvipcheck == "sonsamset"){
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "huy999"){
-	if ("24-11-2023" >= $today1 )
+	if ("23-11-2023" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  if ($trangthai == 1) {
