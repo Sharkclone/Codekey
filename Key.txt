@@ -4,30 +4,30 @@ if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
 	$keyvipcu =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
 	}
-	$trangthai = "fail";
+	$trangthai = 3;
 	date_default_timezone_set('Asia/Ho_Chi_Minh');
-	$today1 = date("d-m-Y");
+	$today1 = date("Y-m-d");
 	
 	//"bukeyfrinhanhne" là mã Key
-	//08-10-2023 là ngày hết hạn  key
+	//2023-10-08 là ngày hết hạn  key
 	// Muốn thêm key mới thì copy hết dòng dưới thay mã key với ngày hết hạn
 	
 	
 	if ( $keyvipcheck == "toandzvclra"){
-	if ("29-10-2024" >= $today1 )
+	if ("2024-10-29" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 
 if ( $keyvipcheck == "thangks3513"){
-	if ("09-11-2024" >= $today1 )
+	if ("2024-11-09" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "sonsamset"){
-	if ("26-11-2023" >= $today1 )
+	if ("2023-11-26" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 if ( $keyvipcheck == "huy999"){
-	if ("26-11-2023" >= $today1 )
+	if ("2023-11-26" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  if ($trangthai == 1) {
@@ -38,4 +38,4 @@ if ( $keyvipcheck == "huy999"){
 		sleep(1);
 	}
  }
- if ($trangthai == "fail") {echo "Key sai";}
+ if ($trangthai == 3) {echo "Key sai";}
