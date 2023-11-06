@@ -34,6 +34,10 @@ if ( $keyvipcheck == "huy"){
 	if ("2023-11-29" >= $today1 )
 	{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
+if ( $keyvipcheck == "thanhtai2202"){
+	if ("2023-11-7" >= $today1 )
+	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
  if ($trangthai == 1) {
  echo "Key Đúng";
  file_put_contents('activestatus.txt', 1);}
