@@ -1,49 +1,64 @@
-if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcheck = file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
-	}
-	if (file_exists("/sdcard/Android/datas/FileLuuKeyVip.txt")) {
-	$keyvipcu =	file_get_contents("/sdcard/Android/datas/FileLuuKeyVip.txt");
-	}
-	$trangthai = 3;
-	date_default_timezone_set('Asia/Ho_Chi_Minh');
-	$today1 = date("Y-m-d");
-	
-	//"bukeyfrinhanhne" là mã Key
-	//2023-10-08 là ngày hết hạn  key
-	// Muốn thêm key mới thì copy hết dòng dưới thay mã key với ngày hết hạn
-	
-	
-	if ( $keyvipcheck == "toandzvclra"){
-	if ("2024-10-29" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
+function checkkey1 ($keyvipcheck) {
+ $trangthai = 3;
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+$today1 = date("Ymd");
+//
+/*
+Lệnh mẫu 
+if ( $keyvipcheck == "keyvipngay"){
 
-if ( $keyvipcheck == "thangks3513"){
-	if ("2024-11-09" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
+       $ngayhethan = '20231022';
+
+if ( $ngayhethan >= $today1 )
+{$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
+ //
+ else
+ Có thể thay thế
+ keyvipngay là key
+ 20231022 là ngày hết hạn với định dạng năm tháng ngày
+ lưu ý else
+*/
+ if ( $keyvipcheck == "toandzvclra" ){
+       
+       $ngayhethan = '20241029';
+        if ($ngayhethan >= $today1 )
+        {$trangthai = 1 ;} else {$trangthai = 0 ;}
+ }
+ else
+ if ( $keyvipcheck == "thangks3513"){
+
+	$ngayhethan = '20241109';
+	
+	 if ($ngayhethan >= $today1 )
+	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
+}
+else
 if ( $keyvipcheck == "sonsamset"){
-	if ("2023-11-26" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
+
+	$ngayhethan = '20231126';
+	
+	 if ($ngayhethan >= $today1 )
+	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
+}
+else
 if ( $keyvipcheck == "huy999"){
-	if ("2023-11-26" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
+
+	$ngayhethan = '20231126';
+	
+	 if ($ngayhethan >= $today1 )
+	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
+}
+else
+
 if ( $keyvipcheck == "huy"){
-	if ("2023-11-29" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
-if ( $keyvipcheck == "thanhtai2202"){
-	if ("2023-11-7" >= $today1 )
-	{$trangthai = 1 ;} else {$trangthai = 0 ;}
- }
- if ($trangthai == 1) {
- echo "Key Đúng";
- file_put_contents('activestatus.txt', 1);}
- else { 
-	if ($trangthai == 0) {echo "Key hết hạn";
-		sleep(1);
-	}
- }
- if ($trangthai == 3) {echo "Key sai";}
+
+	$ngayhethan = '20231129';
+	
+	 if ($ngayhethan >= $today1 )
+	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
+}
+//Lưu  ý else không được nằm  ở cuối code
+
+return $trangthai.'|'.$ngayhethan;
+}
