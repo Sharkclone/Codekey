@@ -26,7 +26,7 @@ if ( $ngayhethan >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
  else
- if ( $keyvipcheck == "thanhtai2202"){
+ if ( $keyvipcheck == "thanhtai2203"){
 
 	$ngayhethan = '20231108';
 	
