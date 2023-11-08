@@ -28,7 +28,7 @@ if ( $ngayhethan >= $today1 )
 else
 if ( $keyvipcheck == "sonsamset"){
 
-	$ngayhethan = '20231126';
+	$ngayhethan = '20231208';
 	
 	 if ($ngayhethan >= $today1 )
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
