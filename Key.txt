@@ -26,14 +26,6 @@ if ( $ngayhethan >= $today1 )
         {$trangthai = 1 ;} else {$trangthai = 0 ;}
  }
 else
-if ( $keyvipcheck == "sonsamset"){
-
-	$ngayhethan = '20231208';
-	
-	 if ($ngayhethan >= $today1 )
-	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
-}
-else
 if ( $keyvipcheck == "huy999"){
 
 	$ngayhethan = '20231126';
@@ -45,6 +37,14 @@ else
 if ( $keyvipcheck == "thanhtai2203"){
 
 	$ngayhethan = '20231108';
+	
+	 if ($ngayhethan >= $today1 )
+	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
+}
+else
+if ( $keyvipcheck == "sonsamset"){
+
+	$ngayhethan = '20230812';
 	
 	 if ($ngayhethan >= $today1 )
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
