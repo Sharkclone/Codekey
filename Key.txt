@@ -34,7 +34,7 @@ if ( $keyvipcheck == "huy999"){
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
 }
 else
-if ( $keyvipcheck == "NGOC"){
+if ( $keyvipcheck == "TIENNGOC"){
 
 	$ngayhethan = '20231228';
 	
