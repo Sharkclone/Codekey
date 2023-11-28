@@ -34,9 +34,9 @@ if ( $keyvipcheck == "huy999"){
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
 }
 else
-if ( $keyvipcheck == "thanhtai2203"){
+if ( $keyvipcheck == "NGOC"){
 
-	$ngayhethan = '20231108';
+	$ngayhethan = '20231228';
 	
 	 if ($ngayhethan >= $today1 )
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
