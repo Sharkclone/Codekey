@@ -5,9 +5,9 @@ $today1 = date("Ymd");
 //
 /*
 Lệnh mẫu 
-if ( $keyvipcheck == "keyvipngay"){
+if ( $keyvipcheck == "nguyentu"){
 
-       $ngayhethan = '20231022';
+       $ngayhethan = '20231228';
 
 if ( $ngayhethan >= $today1 )
 {$trangthai = 1 ;} else {$trangthai = 0 ;}
