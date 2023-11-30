@@ -50,7 +50,6 @@ if ( $keyvipcheck == "sonsamset"){
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
 }
 else
-else
 if ( $keyvipcheck == "bipdz0"){
 
 	$ngayhethan = '20231230';
@@ -58,6 +57,7 @@ if ( $keyvipcheck == "bipdz0"){
 	 if ($ngayhethan >= $today1 )
 	 {$trangthai = 1 ;} else {$trangthai = 0 ;}
 }
+else
 if ( $keyvipcheck == "nguyentu"){
 
 	$ngayhethan = '20231228';
